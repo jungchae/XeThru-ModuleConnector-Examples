@@ -1,8 +1,8 @@
-# ModuleConector-Examples
+# ModuleConnector-Examples
 This repo contains latest CPP/PYTHON/MATLAB examples for ModuleConnector based XeThru moudle development.
 New version ModuleConnector will contain this example folder when it be released. 
 
-ModuleConnetor donwload address:
+ModuleConnector donwload address:
 
 https://www.xethru.com/community/resources/module-connector-windows.78/
 https://www.xethru.com/community/resources/module-connector-unix.80/
