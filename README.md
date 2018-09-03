@@ -33,7 +33,7 @@ https://www.xethru.com/community/resources/module-connector-raspberry-pi.81/
 * xt_sensors_plot_record_playback_baseband_IQ_AP_message.py
 * xt_sensors_print_record_PulseDoppler_Noisemap_message.py
 
-3. Others
+3. Other X4 based XeThru module examples
 * xt_modules_print_info.py
 * xt_modules_record_playback_messages.py  
 * xt_sensors_firmware_update.py 
