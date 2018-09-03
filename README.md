@@ -2,7 +2,8 @@
 This repo contains latest CPP/PYTHON/MATLAB examples for ModuleConnector based XeThru moudle development.
 New version ModuleConnector will contain this example folder when it be released. 
 
-ModuleConnetor donwload address: 
+ModuleConnetor donwload address:
+
 https://www.xethru.com/community/resources/module-connector-windows.78/
 https://www.xethru.com/community/resources/module-connector-unix.80/
 https://www.xethru.com/community/resources/module-connector-macos.79/
@@ -10,10 +11,10 @@ https://www.xethru.com/community/resources/module-connector-raspberry-pi.81/
 
 # Example Folder Structure
 
-/CPP
-/MATLAB
-/PYTHON
-README.md
+* /CPP
+* /MATLAB
+* /PYTHON
+* README.md
 
 # Example Content
 
