@@ -30,6 +30,7 @@ from pymoduleconnector.extras.auto import auto
 from pymoduleconnector.ids import *
 
 from xt_modules_print_info import print_module_info
+from xt_modules_print_info import print_sesnor_settings
 from xt_modules_record_playback_messages import start_record
 from xt_modules_record_playback_messages import start_player
 
@@ -109,6 +110,7 @@ def configure_x4m300(device_name, record=False, x4m300_settings=x4m300_par_setti
 
         print("Setting %s to %s" % (variable, value))
 
+    print_sesnor_settings(x4m300)
     print('Set module to RUN mode')
     try:
         x4m300.set_sensor_mode(XTID_SM_RUN, 0)  # RUN mode

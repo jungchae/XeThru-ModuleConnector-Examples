@@ -38,9 +38,8 @@ https://www.xethru.com/community/resources/module-connector-raspberry-pi.81/
 * xt_modules_record_playback_messages.py  
 * xt_sensors_firmware_update.py 
 
-4. X2M200 legency examples 
+4. X2M200 legacy examples 
 * X2M200_plot_respiration.py
 * X2M200_read_record.py
 * X2M200_record.py
  
-

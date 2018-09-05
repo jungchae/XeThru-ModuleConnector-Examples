@@ -69,6 +69,25 @@ def print_module_info(device_name):
     return OrderCode
 
 
+def print_sesnor_settings(xethru_sensor):
+    # Check values (to confirm we have the values we want):
+    print("")
+    print("********** Current sensor settings **********")
+    print("")
+    print("profile id: " + str(xethru_sensor.get_profileid()))
+    print("sensitivity: " + str(xethru_sensor.get_sensitivity()))
+    print("led control: " + str(xethru_sensor.get_led_control()))
+    print("noise map control: " + str(xethru_sensor.get_noisemap_control()))
+    print("tx_center_frequency: " +
+          str(xethru_sensor.get_tx_center_frequency()))
+    frame_area = xethru_sensor.get_detection_zone()
+    print("Detection zone: " + str(frame_area.start) +
+          " to " + str(frame_area.end))
+    limits = xethru_sensor.get_detection_zone_limits()
+    # print("Detection zone limits: " + str(limits.min) + " to " +
+    #       str(limits.max))  # + " Step: " + str(frame_area_limits.step))
+
+
 def print_x4_settings(xep):
     # Check values (to confirm we have the values we want):
     print("")
