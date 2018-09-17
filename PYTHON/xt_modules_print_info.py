@@ -83,9 +83,6 @@ def print_sesnor_settings(xethru_sensor):
     frame_area = xethru_sensor.get_detection_zone()
     print("Detection zone: " + str(frame_area.start) +
           " to " + str(frame_area.end))
-    limits = xethru_sensor.get_detection_zone_limits()
-    # print("Detection zone limits: " + str(limits.min) + " to " +
-    #       str(limits.max))  # + " Step: " + str(frame_area_limits.step))
 
 
 def print_x4_settings(xep):
@@ -127,6 +124,16 @@ def main():
             raise
 
     print_module_info(device_name)
+    """ 
+    # print_sesnor_settings for xethru sensor  xethru_sensor
+    configuration for sensor setting output
+    mc = ModuleConnector(device_name)
+    mc.get_xep()
+    x4m200 = mc.get_x4m200()
+    x4m200.set_sensor_mode(XTS_SM_STOP, 0)
+    x4m200.load_profile(XTS_ID_APP_RESPIRATION_2) # need to be change according to sensors
+    print_sesnor_settings(x4m200) 
+    """
 
 
 if __name__ == "__main__":
