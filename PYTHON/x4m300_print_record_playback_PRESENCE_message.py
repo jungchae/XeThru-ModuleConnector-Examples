@@ -2,9 +2,9 @@
 # -*- coding: utf-8 -*-
 """ \example x4m300_print_record_playback_PRESENCE_message.py
 
-#Target module: X4M300
+# Target module: X4M300
 
-#Introduction: This is an example of how to print out application messages from X4M300 module.
+# Introduction: This is an example of how to print out application messages from X4M300 module.
 
 # prerequisite:
 # ModuleConnector python lib is installed, check XeThruSensorsIntroduction application note to get detail

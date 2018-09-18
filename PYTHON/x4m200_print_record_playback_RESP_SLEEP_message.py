@@ -187,7 +187,7 @@ def main():
                 raise
         print_module_info(device_name)
         x4m200 = configure_x4m200(
-            auto()[0], options.record, x4m200_par_settings)
+            device_name, options.record, x4m200_par_settings)
 
     else:
         player = start_player(meta_filename=options.meta_filename)
