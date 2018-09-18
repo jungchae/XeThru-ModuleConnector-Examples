@@ -27,6 +27,7 @@ https://www.xethru.com/community/resources/module-connector-raspberry-pi.81/
 1. Profile messages for the normal user
 * x4m300_print_record_playback_PRESENCE_message.py
 * x4m200_print_record_playback_RESP_SLEEP_message.py
+* x4m210_print_HR_message.py
 
 2. Radar DSP data message for the advanced user
 * xt_modules_plot_record_playback_radar_raw_data_message.py        
@@ -36,7 +37,8 @@ https://www.xethru.com/community/resources/module-connector-raspberry-pi.81/
 3. Other X4 based XeThru module examples
 * xt_modules_print_info.py
 * xt_modules_record_playback_messages.py  
-* xt_sensors_firmware_update.py 
+* xt_modules_firmware_update.py 
+* xt_modules_access_registers.py
 
 4. X2M200 legacy examples 
 * X2M200_plot_respiration.py
