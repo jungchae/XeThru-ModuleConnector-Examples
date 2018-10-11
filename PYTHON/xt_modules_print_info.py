@@ -30,9 +30,6 @@ def print_module_info(device_name):
     # Stop running application and set module in manual mode.
     mc = ModuleConnector(device_name)
     app = mc.get_x4m200()
-    # we have to go to manual mode
-    # app.set_sensor_mode(XTS_SM_STOP, 0)
-    # app.set_sensor_mode(XTS_SM_MANUAL, 0)
     # Stop running application and set module in manual mode.
     try:
         app.set_sensor_mode(XTS_SM_STOP, 0)  # Make sure no profile is running.
@@ -49,19 +46,19 @@ def print_module_info(device_name):
     print("")
     print("********** XeThru Module Information **********")
     print("")
-    print('Received pong=', hex(pong) + ' connection build!')
-    print('FirmWareID =', xep.get_system_info(XTID_SSIC_FIRMWAREID))
-    print('Version =', xep.get_system_info(XTID_SSIC_VERSION))
-    print('Build =', xep.get_system_info(XTID_SSIC_BUILD))
-    print('VersionList =', xep.get_system_info(XTID_SSIC_VERSIONLIST))
+    print('Received pong= ', hex(pong) + ' connection build!')
+    print('FirmWareID = ', xep.get_system_info(XTID_SSIC_FIRMWAREID))
+    print('Version = ', xep.get_system_info(XTID_SSIC_VERSION))
+    print('Build = ', xep.get_system_info(XTID_SSIC_BUILD))
+    print('VersionList = ', xep.get_system_info(XTID_SSIC_VERSIONLIST))
 
     # Following three item only supported by XeThru Sensor, e.g.X4M200, X4M300. X4M03 does not these information and will feedback error message when read.
     try:
         OrderCode = "X4Mxx"
         OrderCode = xep.get_system_info(XTID_SSIC_ORDERCODE)
-        print('OrderCode =', OrderCode)
-        print('ItemNumber =', xep.get_system_info(XTID_SSIC_ITEMNUMBER))
-        print('SerialNumber =', xep.get_system_info(XTID_SSIC_SERIALNUMBER))
+        print('OrderCode = ', OrderCode)
+        print('ItemNumber = ', xep.get_system_info(XTID_SSIC_ITEMNUMBER))
+        print('SerialNumber = ', xep.get_system_info(XTID_SSIC_SERIALNUMBER))
     except:
         # This is not a sensor but a development kit running XEP.
         pass
