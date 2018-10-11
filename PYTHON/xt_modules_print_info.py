@@ -62,6 +62,8 @@ def print_module_info(device_name):
     except:
         # This is not a sensor but a development kit running XEP.
         pass
+    # Uncomment following line to enable print X4 setting from XeThru module
+    # print_x4_settings(xep)
     mc.close()
     return OrderCode
 
@@ -89,7 +91,6 @@ def print_x4_settings(xep):
     print("")
     print("iterations: " + str(xep.x4driver_get_iterations()))
     print("pulses_per_step: " + str(xep.x4driver_get_pulses_per_step()))
-    print("dac_step: " + str(xep.x4driver_get_dac_step()))
     print("dac_min: " + str(xep.x4driver_get_dac_min()))
     print("dac_max: " + str(xep.x4driver_get_dac_max()))
     print("prf_div: " + str(xep.x4driver_get_prf_div()))
@@ -99,6 +100,7 @@ def print_x4_settings(xep):
     print("Frame area offset: " + str(xep.x4driver_get_frame_area_offset()))
     frame_area = xep.x4driver_get_frame_area()
     print("Frame Area: " + str(frame_area.start) + " to " + str(frame_area.end))
+    print("fps: " + str(xep.x4driver_get_fps()))
 
 
 def main():
